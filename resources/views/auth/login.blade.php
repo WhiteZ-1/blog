@@ -7,10 +7,11 @@
         <h1>Login</h1>
         
         <input name='email' type="email" value="{{ old('email') }}" placeholder="Email">
-        <span class="error">@error('email') {{$message}} @enderror</span>
+        <span class="error"><strong>@error('email') {{$message}} @enderror</strong></span>
+
 
         <input name='password' type="password" value="{{ old('password') }}" placeholder="Password">
-        <span class="error">@error('password') {{$message}} @enderror</span>
+        <span class="error"><strong>@error('password') {{$message}} @enderror</strong></span>
 
         <button class="submit">Submit</button>
     </form>

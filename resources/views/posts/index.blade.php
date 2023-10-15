@@ -8,7 +8,8 @@
             </h3>
             <p style="margin-bottom: 1rem">{{$post->text}}</p>
             <p style="font-size: small; font-weight:bolder">By: {{$post->user->username}}</p>
+            <hr style="margin-top: 1rem">
         </div>
-        <hr style="margin-top: 1rem">
+        
         @endforeach
 @endsection

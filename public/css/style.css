@@ -28,11 +28,16 @@ ul li{
     margin: 1rem;
 }
 
+
 ul li a{
     font-weight: bold;
     text-decoration: none;
     font-size: large;
     color: black;
+}
+
+.post-card a{
+    text-decoration: none;
 }
 .main{
     display: flex;
@@ -98,6 +103,7 @@ ul li a{
     height: 3rem;
     border: 1px solid rgb(94, 92, 92);
     border-radius: 5rem;
+    margin-top: 1rem;
 }
 
 .submit:hover{
@@ -112,7 +118,7 @@ ul li a{
      display: flex;
      flex-direction: column;
      justify-content: center;
-    }
+}
 
 .post-card h3{
     font-size: larger;

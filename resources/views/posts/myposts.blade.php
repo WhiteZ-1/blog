@@ -16,7 +16,8 @@
                 @csrf
                 <button style="background-color:bisque">Delete</button>
             </form>
+            <hr style="margin-top: 2rem">
         </div>
-        <hr style="margin-top: 2rem">
+        
         @endforeach
 @endsection
