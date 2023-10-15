@@ -34,10 +34,11 @@ class UserController extends Controller
     }
     public function loginUser(Request $request){
         $incoming = $request->validate([
-            'email'=>'required',
+            'email'=>'required|exists:users',
             'password'=>'required',
         ],[
-            'email'=>'Please fill in the field',
+            'email.required'=>'Please fill in the field',
+            'email.exists'=>'Please enter correct credentails',
             'password'=>'Please fill in the field', 
         ]);
         if (auth()->attempt(['email'=> $incoming['email'],'password'=> $incoming['password'], ]))  {

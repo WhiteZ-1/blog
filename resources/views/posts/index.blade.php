@@ -10,6 +10,5 @@
             <p style="font-size: small; font-weight:bolder">By: {{$post->user->username}}</p>
             <hr style="margin-top: 1rem">
         </div>
-        
         @endforeach
 @endsection
