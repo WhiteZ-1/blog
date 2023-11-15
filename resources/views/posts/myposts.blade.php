@@ -1,6 +1,9 @@
 @extends("layout")
 @section("content")
     <h2>Your Post</h2>
+    @if (count($posts)== 0)
+        <h2>No posts</h2> 
+    @endif
     @foreach ($posts as $post)
          <div class="post-card">
             <h3 style="font-size: larger">
